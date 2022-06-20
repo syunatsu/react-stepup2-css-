@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { StyledComponents } from './components/StyledComponents';
+import { CssModules } from './components/CssModules';
+import { InlineStyle } from './components/InlineStyle';
+import { StyledJsx } from './StyledJsx';
+import { Emotion } from './components/Emotion';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InlineStyle />
+      <CssModules />
+      <StyledJsx />
+      <StyledComponents />
+      <Emotion />
     </div>
   );
 }
